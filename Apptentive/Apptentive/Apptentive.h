@@ -20,7 +20,7 @@ FOUNDATION_EXPORT double ApptentiveVersionNumber;
 FOUNDATION_EXPORT const unsigned char ApptentiveVersionString[];
 
 /** The version number of the Apptentive SDK. */
-#define kApptentiveVersionString @"5.2.14"
+#define kApptentiveVersionString @"5.3.0"
 
 /** The version number of the Apptentive API platform. */
 #define kApptentiveAPIVersionString @"9"
@@ -886,7 +886,7 @@ typedef NSString *ApptentiveStyleIdentifier NS_EXTENSIBLE_STRING_ENUM;
 
 NS_ASSUME_NONNULL_END
 
-#import "ApptentiveStyleSheet.h"
+#import <Apptentive/ApptentiveStyleSheet.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
