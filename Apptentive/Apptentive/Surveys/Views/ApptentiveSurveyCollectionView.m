@@ -97,8 +97,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)layoutSubviews {
 	// We might change the layout attributes if the header size changes. Makes sure we warn the OS. 
-	[self.collectionViewLayout invalidateLayout];
-
+    if (!@available(iOS 14, *)) {
+        // iOS 11 (or newer) ObjC code
+        [self.collectionViewLayout invalidateLayout];
+    }
+    
 	[super layoutSubviews];
 
 	UIEdgeInsets contentInset = self.contentInset;
